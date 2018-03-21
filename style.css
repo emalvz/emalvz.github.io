@@ -1,0 +1,181 @@
+body {
+
+	width: 70%;
+	background-image: url(images/bg-pattern.jpg);
+	background-size: auto 100%;
+	background-repeat: repeat;
+	margin: auto;
+}
+
+.wrap {
+
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+.header {
+
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.nav {
+
+	width: 100%;
+	text-align: center;
+}
+
+.nav ul {
+
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	}
+
+.nav li {
+
+	float: left;
+	}
+
+.nav li a {
+
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	background-color: #47a297;
+	width: 85px;
+	padding: 20px 30px;
+	border-style: outset;
+	border-width: 2px;
+	border-color: #7ccdc3;	
+	}
+
+.nav li a.active {
+
+	background-color: #b2aa74;
+}
+
+.nav li a:hover:not(.active) {
+
+	background-color: #E1DCBC ;
+}
+
+.content {
+
+	width: 100%;
+
+}
+
+#sea {
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-style: ridge;
+	border-width: 5px;
+	border-color: white;
+
+}
+
+h2, h3 {
+
+	color: #426c66;
+	font-weight: normal;
+
+}
+
+h2 {
+
+	color: #564637;
+}
+
+p {
+
+	color: #564637;
+	line-height: 30px;
+}
+
+.blog {
+
+	background-color: white;
+	float: left;
+	width: 65%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+hr {
+
+	border-style: dotted;
+}
+
+.attractions {
+
+	width: 30%;
+	float: right;
+}
+
+.attractions a:hover {
+
+	color: yellow;
+	opacity: 0.5;
+}
+
+.testimonials {
+
+	background-color: white;
+	float: left;
+	width: 65%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+.footer {
+
+	width: 100%;
+	background-color: #A99E95;
+	border-style: outset;
+	border-width: 1px;
+}
+
+.nav_bottom {
+}
+
+.nav_bottom ul {
+
+	list-style-type: none;
+}
+
+.nav_bottom li {
+
+	display: inline;
+	margin-right: 5%;
+}
+
+.nav_bottom li a{
+
+	text-decoration: none;
+	color: #564637;
+}
+
+.nav_bottom li a.active {
+
+	color: white;
+}
+
+.nav_bottom li a:hover:not(.active) {
+
+	color: #EDE7C7;
+}
+
+
+.copyright {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+}
