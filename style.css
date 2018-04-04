@@ -1,181 +1,277 @@
 body {
 
 	width: 70%;
-	background-image: url(images/bg-pattern.jpg);
-	background-size: auto 100%;
-	background-repeat: repeat;
-	margin: auto;
+	margin: 0 auto;
+	background-image: url(images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	font-family: 'Ovo', serif;
 }
 
-.wrap {
+.topnav {
+	width: 100%;
+	height: 100px;
+	/*background-color: #695e38;*/
+	position: fixed;
+	top: 0;
 
-	display: flex;
-	flex-wrap: wrap;
-	}
+}
+
+
+/*#logo {
+	width: 100%;
+}*/
+
+.topnav a {
+
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	color: white;
+	background-color: #426B2A;
+	padding: 10px 50px;
+	margin-right: 10px;
+	float: left;
+	border-radius: 0 0 20px 20px;
+	border-style: solid;
+	border-color: black;
+
+}
+
+.topnav a:hover {
+	background-color: #C7D8B2;
+}
 
 .header {
 
+	background-image: url(images/banner.jpg);
 	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.nav {
-
-	width: 100%;
-	text-align: center;
-}
-
-.nav ul {
-
+	height: 450px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align:  center;
 	list-style-type: none;
 	display: inline-block;
-	margin: 0;
+	margin: 100px 0 0 0;
 	padding: 0;
-	}
+	overflow: hidden;
+	font-size: 15px;
+}
 
-.nav li {
-
-	float: left;
-	}
-
-.nav li a {
+.header a {
 
 	text-decoration: none;
 	text-align: center;
 	display: inline-block;
 	color: white;
-	font-weight: bold;
-	background-color: #47a297;
+	background-color: #426B2A;
 	width: 85px;
-	padding: 20px 30px;
-	border-style: outset;
-	border-width: 2px;
-	border-color: #7ccdc3;	
-	}
+	padding: 10px 5%;
+	border-radius: 0 0 20px 20px;
+	border-style: solid;
+	border-color: black;
 
-.nav li a.active {
-
-	background-color: #b2aa74;
 }
 
-.nav li a:hover:not(.active) {
-
-	background-color: #E1DCBC ;
+.header a:hover {
+	background-color: #C7D8B2;
 }
+
+.active {
+	background-color: #C7D8B2;
+	color: white;
+}
+
+.header .icon {
+	display: none;
+}
+
+/*#logo {
+	float: left;
+	padding-left: 50px;
+	padding-top: 50px;
+}*/
+
 
 .content {
 
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	color: #695e38;
+}
+
+.about {
 	width: 100%;
+	display: block;
+	text-align: center;
+	margin: 50px 25% 0 25%;
+	background-color: rgba(255,255,255,0.7);
+	padding: 0 10px 0 10px;
+}
+
+#description {
+	text-align: justify;
+}
+
+.do-help {
+
+	width: 100%;
+	margin-top: 100px;
 
 }
 
-#sea {
-
-	margin-top: 50px;
-	margin-bottom: 50px;
-	border-style: ridge;
-	border-width: 5px;
-	border-color: white;
-
-}
-
-h2, h3 {
-
-	color: #426c66;
-	font-weight: normal;
-
-}
-
-h2 {
-
-	color: #564637;
-}
-
-p {
-
-	color: #564637;
-	line-height: 30px;
-}
-
-.blog {
-
-	background-color: white;
+#do {
+	width: 45%;
 	float: left;
-	width: 65%;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 20px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+	padding-bottom: 20px;
 }
 
-hr {
-
-	border-style: dotted;
-}
-
-.attractions {
-
-	width: 30%;
+#help {
+	width: 45%;
 	float: right;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
 }
 
-.attractions a:hover {
-
-	color: yellow;
-	opacity: 0.5;
+#help a:hover {
+	opacity: 0.8;
 }
 
-.testimonials {
 
-	background-color: white;
-	float: left;
-	width: 65%;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 20px;
-}
-
-.footer {
+.connect {
 
 	width: 100%;
-	background-color: #A99E95;
-	border-style: outset;
-	border-width: 1px;
-}
-
-.nav_bottom {
-}
-
-.nav_bottom ul {
-
-	list-style-type: none;
-}
-
-.nav_bottom li {
-
-	display: inline;
-	margin-right: 5%;
-}
-
-.nav_bottom li a{
-
-	text-decoration: none;
-	color: #564637;
-}
-
-.nav_bottom li a.active {
-
+	display: inline-block;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 200px;
 	color: white;
 }
 
-.nav_bottom li a:hover:not(.active) {
+.footer {
+	margin-top: 100px;
+}
 
-	color: #EDE7C7;
+.footer ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+	background-color: #695e38;
+}
+
+.footer li {
+
+	display: inline;
+}
+
+.footer li a{
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px;
+
+}
+
+.footer li a:hover {
+	color: black;
+}
+
+/*Media Queries*/
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .header a:not(:first-child) {display: none;}
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .header.responsive {position: relative;}
+  .header.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*Main query*/
+
+@media screen and (max-width: 600px) {
+	body {
+		width: 90%;
+		background-size: auto 100%;
+		margin: 0 auto;
+	}
+
+	.header a {
+		border-radius: 0;
+	}
+
+	.active {
+		float: left;
+	background-color: #C7D8B2;
+	color: white;
 }
 
 
-.copyright {
+.about {
 	width: 100%;
+	display: block;
 	text-align: center;
-	font-size: 15px;
+	margin: 0;
+	background-color: rgba(255,255,255,0.7);
+	padding: 0 10px 0 10px;
+}
+
+
+.do-help {
+
+	width: 100%;
+	margin-top: 100px;
+
+}
+
+#do {
+	width: 100%;
+	float: left;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+}
+
+#help {
+	width: 100%;
+	float: right;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+	margin-bottom: 50px;
+	}
+
+	.connect {
+		text-align: center;
+	}
+
+	.footer ul {
+	width: 90%;
+	}
+
+	.footer li a{
+	padding: 10px;
+
+}
 }

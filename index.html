@@ -7,16 +7,16 @@
 <head>
 
 
-	<title>Bhaccasyoniztas Beach Resort - Redux</title>
+	<title></title>
 
-	<!--Site recreated from
-	https://freewebsitetemplates.com/preview/beachresort/index.html-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
 
-	<!--Remade by Emanuel Alvarez - 2018 - No copyright infringement intented - -->
 
-	<!-- This site is only responsive in the sense that the content compresses and fits in the screen. However, media queries are still required for smaller screens, -->
 
 
 </head>
@@ -24,73 +24,83 @@
 
 <body>
 
-<div class="wrap">
-
-	<div class="header"><img src="images/logo.png"></div>
-	
-	<div class="nav">
-		<ul>
-			<li><a class="active" href="#">HOME</a></li>
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">ROOMS</a></li>
-			<li><a href="#">DIVE SITE</a></li>
-			<li><a href="#">FOOD</a></li>
-			<li><a href="#">NEWS</a></li>
-			<li><a href="#">CONTACT</a></li>
-		</ul>	
-	</div>
-
-	<div class="content"><img id="sea" src="images/sea-sound.jpg" style="width: 100%;">
-		<h2>ENJOY THE SUMMER WITH US!</h2>
-		<p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</p>
-
-	<div class="blog"><h3>LATEST BLOG</h3>
-		<hr>
-		<h2>This is just a place holder.</h2>
-			<p>April 02, 2012</p>
-			<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.…</p>
-		<hr>
-		<h2>This is just a place holder.</h2>
-			<p>April 02, 2012</p>
-			<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.…</p>
-		<hr></div>
-
-		<div class="attractions">
-			<a href="#"><img src="images/rooms.png" style="width: 100%"></a>
-			<a href="#"><img src="images/dive-site.png" style="width: 100%"></a>
-			<a href="#"><img src="images/food.png" style="width: 100%"></a>
-		</div>
-
-		<div class="testimonials">
-			<h3>TESTIMONIALS</h3>
-			<p>"You can remove any link to our website from this website template, you're free to use this website template without linking back to us. This is just a place holder, so you can see what the site would look like."</p>
-		</div>
-
+	<nav class="topnav">
 		
+			<a href="#">Contact</a>
+			<a href="#">Connect</a>
 			
+	</nav>
+	<div class="header" id="mynav">
+		
+			<a href="#home" class="active">Home</a>
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#news">News</a>
+			<a href="#getinvolved">Get Involved</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		
+
+		<!-- <img id="logo" src="images/logo.png" style="width: 25%;"> -->
+
+	</div>
+	
+
+	<div class="content">
+		<div class="about">
+			<h1>About Us</h1>
+
+			<p id="description">The Green Foundation was founded in August 2005 and is a non-profit organisation that aims to assist and uplift rural communities with the support of environmental projects. We have raised more than R 4 million to date and have won the Hope Award in 2007 and 2016. To date, we have assisted 45 rural communities in India, USA and Australia and planted more than 30,000 trees. For a full outline of our projects per area, please see our project booklet, attached. Our staff currently includes two full time project coordinators, a marketing coordinator and five administrative staff members. We also have four part time volunteers during various stages of the year. Our main message is that poverty and environmental degradation are intrinsically linked. By educating communities to respect the environment, opportunities for income generation are created.</p>
 		</div>
+
+		<div class="do-help">
+			<div id="do">
+			<h2>What We Do</h2>
+			<img src="images/beach.jpg" style="width: 90%;">
+			<img src="images/park.jpeg" style="width: 90%;">
+			<img src="images/planting.jpg" style="width: 90%;">
+			</div>
+
+			<div id="help">
+			<h2>How You Can Help</h2>
+			<a href="#"><img src="images/donate.jpg" style="width: 90%;"></a>
+			<a href="#"><img src="images/merch.jpg" style="width: 90%;"></a>
+			<a href="#"><img src="images/volunteer.jpg" style="width: 90%;"></a>
+			</div>
+		</div>
+
+		<!-- <div class="connect">
+			<h3>Connect With Us</h3>
+			<a href="#">Facebook</a>
+			<a href="#">Newsletter</a>
+			<a href="#">Download</a>
+		</div> -->
+	
+
+	</div>
 
 	<div class="footer">
-		<div class="nav_bottom">
 		<ul>
-			<li><a class="active" href="#">HOME</a></li>
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">ROOMS</a></li>
-			<li><a href="#">DIVE SITE</a></li>
-			<li><a href="#">FOOD</a></li>
-			<li><a href="#">NEWS</a></li>
-			<li><a href="#">CONTACT</a></li>
-		</ul>	
-	</div>
-		
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Donate</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
 	</div>
 
-	<div class="copyright"><p>© 2023 by BHACCASYONIZTAS BEACH RESORT. All Rights Reserved</p></div>
+	<!-- Javascript -->
 
-</div>
-
-
-
+	<script>
+		function myFunction() {
+    var x = document.getElementById("mynav");
+    if (x.className === "header") {
+        x.className += " responsive";
+    } else {
+        x.className = "header";
+    }
+}
+</script>
 
 </body>
 
