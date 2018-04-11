@@ -1,277 +1,169 @@
 body {
-
-	width: 70%;
-	margin: 0 auto;
-	background-image: url(images/background.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-	font-family: 'Ovo', serif;
+	background-image: url(images/bg.jpg);
+	background-size: 90%;
+	background-repeat: repeat;
 }
 
+
+ /* Add a black background color to the top navigation */
 .topnav {
-	width: 100%;
-	height: 100px;
-	/*background-color: #695e38;*/
-	position: fixed;
-	top: 0;
-
+    background-color: #000;
+    overflow: hidden;
 }
 
-
-/*#logo {
-	width: 100%;
-}*/
-
+/* Style the links inside the navigation bar */
 .topnav a {
-
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-	color: white;
-	background-color: #426B2A;
-	padding: 10px 50px;
-	margin-right: 10px;
-	float: left;
-	border-radius: 0 0 20px 20px;
-	border-style: solid;
-	border-color: black;
-
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.topnav a:hover {
-	background-color: #C7D8B2;
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #3970C5;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.chuudrop {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.chuudrop .chuubtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.chuu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.chuu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .chuudrop:hover .chuubtn {
+    background-color: #83cafa;
+    color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.chuu-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.chuudrop:hover .chuu-content {
+    display: block;
+}
+
+#contact {
+	float: right;
 }
 
 .header {
-
 	background-image: url(images/banner.jpg);
 	width: 100%;
-	height: 450px;
+	height: 250px;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	text-align:  center;
-	list-style-type: none;
-	display: inline-block;
-	margin: 100px 0 0 0;
-	padding: 0;
-	overflow: hidden;
-	font-size: 15px;
+	
 }
-
-.header a {
-
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-	color: white;
-	background-color: #426B2A;
-	width: 85px;
-	padding: 10px 5%;
-	border-radius: 0 0 20px 20px;
-	border-style: solid;
-	border-color: black;
-
-}
-
-.header a:hover {
-	background-color: #C7D8B2;
-}
-
-.active {
-	background-color: #C7D8B2;
-	color: white;
-}
-
-.header .icon {
-	display: none;
-}
-
-/*#logo {
-	float: left;
-	padding-left: 50px;
-	padding-top: 50px;
-}*/
-
 
 .content {
-
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	color: #695e38;
-}
-
-.about {
-	width: 100%;
-	display: block;
 	text-align: center;
-	margin: 50px 25% 0 25%;
-	background-color: rgba(255,255,255,0.7);
-	padding: 0 10px 0 10px;
 }
 
-#description {
-	text-align: justify;
+#myCarousel {
+  width: 25%;
+  margin: auto;
+  border-style: ridge;
+  border-color: white;
+  border-width: 10px;
 }
 
-.do-help {
-
-	width: 100%;
-	margin-top: 100px;
-
+.carousel-control-prev, .carousel-control-next {
+  background-color: #3970C5;
 }
 
-#do {
-	width: 45%;
-	float: left;
+
+.copyright {
+	background-color: #000;
+	color: #fff;
 	text-align: center;
-	background-color: rgba(255,255,255,0.7);
-	padding-bottom: 20px;
+	font-size: 12px;
 }
 
-#help {
-	width: 45%;
-	float: right;
-	text-align: center;
-	background-color: rgba(255,255,255,0.7);
+#me {
+	font-size: 10px;
 }
-
-#help a:hover {
-	opacity: 0.8;
-}
-
-
-.connect {
-
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-	margin-top: 200px;
-	margin-bottom: 200px;
-	color: white;
-}
-
-.footer {
-	margin-top: 100px;
-}
-
-.footer ul {
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-	text-align: center;
-	background-color: #695e38;
-}
-
-.footer li {
-
-	display: inline;
-}
-
-.footer li a{
-	color: white;
-	display: inline-block;
-	text-decoration: none;
-	padding: 15px;
-
-}
-
-.footer li a:hover {
-	color: black;
-}
-
-/*Media Queries*/
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .header a:not(:first-child) {display: none;}
-  .header a.icon {
+  .topnav a:not(:first-child), .chuudrop .chuubtn {display: none;}
+  .topnav a.icon {
     float: right;
     display: block;
   }
-
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .header.responsive {position: relative;}
-  .header.responsive a.icon {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .header.responsive a {
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-}
+  .topnav.responsive .chuudrop {float: none;}
+  .topnav.responsive .chuu-content {position: relative;}
+  .topnav.responsive .chuudrop .chuubtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 
-/*Main query*/
+  #contact {
+  	float: left;
+  }
 
-@media screen and (max-width: 600px) {
-	body {
-		width: 90%;
-		background-size: auto 100%;
-		margin: 0 auto;
-	}
-
-	.header a {
-		border-radius: 0;
-	}
-
-	.active {
-		float: left;
-	background-color: #C7D8B2;
-	color: white;
-}
-
-
-.about {
-	width: 100%;
-	display: block;
-	text-align: center;
-	margin: 0;
-	background-color: rgba(255,255,255,0.7);
-	padding: 0 10px 0 10px;
-}
-
-
-.do-help {
-
-	width: 100%;
-	margin-top: 100px;
-
-}
-
-#do {
-	width: 100%;
-	float: left;
-	text-align: center;
-	background-color: rgba(255,255,255,0.7);
-	padding-bottom: 20px;
-	margin-bottom: 50px;
-}
-
-#help {
-	width: 100%;
-	float: right;
-	text-align: center;
-	background-color: rgba(255,255,255,0.7);
-	margin-bottom: 50px;
-	}
-
-	.connect {
-		text-align: center;
-	}
-
-	.footer ul {
-	width: 90%;
-	}
-
-	.footer li a{
-	padding: 10px;
-
-}
-}
+  #myCarousel {
+    width: 75%;
+  }
+} 
