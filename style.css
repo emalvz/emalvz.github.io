@@ -90,6 +90,7 @@ body {
 
 #contact {
 	float: right;
+	color: white;
 }
 
 .header {
@@ -121,6 +122,27 @@ body {
 #myCarousel {
 	margin-bottom: 50px;
 }
+
+#kofi, #discord {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-style: ridge;
+	border-width: 10px;
+	border-color: #fff;
+}
+
+#kofi:hover {
+	opacity: 0.8;
+	border-color: #3970C5;
+}
+
+#discord:hover {
+	opacity: 0.8;
+	border-color: #3970C5;
+}
+
 
 .copyright {
 	background-color: #000;
@@ -170,4 +192,10 @@ body {
   #myCarousel {
     width: 75%;
   }
+
+  #kofi, #discord {
+  	width: 75%;
+  	margin-left: 12%;
+  }
+
 } 

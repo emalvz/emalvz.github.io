@@ -21,6 +21,8 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
 
+<link rel="stylesheet" href="form.css" >
+
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -54,8 +56,53 @@
 								<a href="#">deviantART</a>
 							</div>
 						</div>
-						<a id="contact" href="#contact">&#9829; Contact</a>
+
 						<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+						<!-- Modal -->
+						<a id="contact" data-toggle="modal" data-target="#myModal"> &#9829; Contact</a>
+						<div id="myModal" class="modal fade" role=dialog>
+							<div class="modal-dialog">
+
+							<!-- Modal Content -->
+							<div class="modal-content">
+							<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">x</button>
+							<h4 class="modal-title">Contact Me</h4>
+						</div>
+						<div class="modal-body">
+								<form role="form" method="post" id="reused-form">
+									<p>Send your message in the form below and I'll get back to you. asap &#9829;</p>
+								<div class="form-group">
+									<label for="name">
+									Name:</label>
+									<input type="text" class="form-control" id="name" name="name" required maxlength="50">
+
+						<div class="form-group">
+							<label for="email">
+							Email:</label>
+							<input type="email" class="form-control" id="email" name="email" required maxlength="50"></div>
+						<div class="form-group">
+							<label for="name">
+							Message:</label>
+							<textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea></div>
+
+
+						<button type="submit" class="btn btn-lg btn-success btn-block" id="btnContact">Post It!</button>
+						</form>
+
+						<div id="success_message" style="width: 100%; height: 100%; display: none;">
+							<h3>Sent your message successfully!</h3></div>
+
+						<div id="error_message" style="width: 100%; height: 100%; display: none;">
+							<h3>Error</h3>
+						Sorry there was an error sending your form.</div>
+
+					</div>
+				</div>
+			</div>
+
+						
 					
 				</div> <!-- topnav -->
 				
@@ -116,9 +163,15 @@
 			</div> <!-- col-sm-12 -->
 		</div> <!-- row -->
 
+		<div class="row">
+			<div class="col-sm-6"><a href="#"><img src="images/kofi.jpg" id="kofi"></a></div>
+			<div class="col-sm-6"><a href="#"><img src="images/discord.jpg" id="discord"></a></div>
+				
+		</div>
+
 		<!-- Footer -->
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12" id="">
 				<div class="copyright">
 					<p>&copy; Strawberry Chuu Studios - 2018</p>
 					<p id="me">Designed by Vulpes Designus with Bootstrap</p>
