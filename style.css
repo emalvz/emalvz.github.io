@@ -49,6 +49,7 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    cursor: pointer;
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -91,7 +92,9 @@ body {
 #contact {
 	float: right;
 	color: white;
+	cursor: pointer;
 }
+
 
 .header {
 	background-image: url(images/banner.jpg);
